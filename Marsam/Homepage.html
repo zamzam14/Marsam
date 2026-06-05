@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="مرسم — المعرض الفني الرقمي. اكتشف مجموعة متميزة من الأعمال الفنية المعاصرة للفنانين العرب، من التجريدي إلى الرقمي والانطباعي.">
+  <meta name="keywords" content="html,css,javascript,art,معرض فني,فن معاصر,فنانين عرب,تجريدي,رقمي,انطباعي">
+  <meta name="author" content="Zamzam">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+    <!---links of the page and logo page--->
+    <nav class="nav-logo" style="border-bottom: 10px solid #c7b198;">
+        <img src="pic/logo-Marsam.png" alt="Logo">
+        <div class="links">
+            <a href="Homepage.html" class="nav-active">الرئيسية</a>
+            <a href="explore.html">الاستكشاف</a>
+            <a href="about.html">نبذة عنّا</a>
+        </div>
+    </nav>
+    <!----the main content of the page--->
+    <main>
+        <div class="hero-main">
+            <h1>مرسم</h1>
+            <p class="p1-main">المعرض الفني الرقمي</p>
+            <p class="p2-main">حيث تلتقي<br><em>الفن</em> والخيال</p>
+            <p class="p3-main">اكتشف مجموعة متميزة من الأعمال الفنية المعاصرة — من التجريدي إلى الرقمي، من الانطباعي إلى المستقبلي</p>
+            <div class="hero-btns">
+                <button class="btn1-main"><a href="#gallery">استعرض الأعمال</a></button>
+                <button class="btn2-main"><a href="./explore.html">استكشاف المعرض</a></button>
+            </div>
+        </div>
+    </main>
+    <!---the number of artwork , artists and style--->
+    <div class="stats-strip">
+        <div class="stat-item">
+            <span class="stat-number" id="stat-artworks">0</span>
+            <span class="stat-label">عمل فني</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" id="stat-artists">0</span>
+            <span class="stat-label">فنان مشارك</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" id="stat-styles">0</span>
+            <span class="stat-label">أسلوب فني</span>
+        </div>
+    </div>
+
+    <!---المعرض الرئيسي--->
+    <section class="gallery-section" id="gallery">
+        <div class="gallery-section-header">
+            <h2 class="gallery-section-title">المعرض الرئيسي</h2>
+            <a href="#gallery" class="view-all-btn">عرض جميع الأعمال ←</a>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="gallery.js"></script>
+</body>
+

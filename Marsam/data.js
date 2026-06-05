@@ -1,0 +1,80 @@
+const ARTWORKS = [
+  {
+    id: "1",
+    title: "شعاع الفجر",
+    artist: "ليلى الأحمدي",
+    year: 2023,
+    style: "تجريدي",
+    mood: "هادئ",
+    price: "2,500",
+    description: "لوحة تجريدية تستلهم من ضوء الفجر الأول، حيث تتشابك ألوان الذهب والبرتقالي في رقصة هادئة تعكس بدايات جديدة وأمل متجدد. استخدمت الفنانة تقنية الطلاء بالأكريليك المخفف لخلق تدرجات ناعمة تحاكي انبثاق الضوء من ظلمة الليل.",
+    image: "https://picsum.photos/seed/marsam1/900/700",
+    thumb: "https://picsum.photos/seed/marsam1/500/380",
+    social: { instagram: "layla_ahmadi_art", facebook: "layla.ahmadi.art", twitter: "layla_ahmadi" }
+  },
+  {
+    id: "2",
+    title: "أصداء المدينة",
+    artist: "كريم منصور",
+    year: 2024,
+    style: "رقمي",
+    mood: "حيوي",
+    price: "1,800",
+    description: "عمل رقمي يستكشف الإيقاع الحضري وتداخل الأصوات والألوان في المدينة الحديثة. تتحرك الأشكال الهندسية في تناغم يعكس صخب الحياة اليومية وتعقيد المشهد الحضري في عصر التكنولوجيا.",
+    image: "https://picsum.photos/seed/marsam2/900/700",
+    thumb: "https://picsum.photos/seed/marsam2/500/380",
+    social: { instagram: "karim_mansour_digital", facebook: "karim.mansour.art", twitter: "karim_mansour" }
+  },
+  {
+    id: "3",
+    title: "نجوم ضائعة",
+    artist: "سارة البكري",
+    year: 2022,
+    style: "انطباعي",
+    mood: "غامض",
+    price: "3,200",
+    description: "لوحة انطباعية تأخذنا في رحلة نحو الكون اللامتناهي، حيث تضيع النجوم وسط سحب من الألوان الداكنة والأزرق العميق. يعكس العمل تساؤلات الفنانة حول الوجود والمصير والبحث عن المعنى.",
+    image: "https://picsum.photos/seed/marsam3/900/700",
+    thumb: "https://picsum.photos/seed/marsam3/500/380",
+    social: { instagram: "sara_bakri_art", facebook: "sara.bakri.impressionist", twitter: "sara_bakri" }
+  },
+  {
+    id: "4",
+    title: "ألوان الروح",
+    artist: "يوسف الزياني",
+    year: 2024,
+    style: "بوب آرت",
+    mood: "حيوي",
+    price: "1,500",
+    description: "عمل بوب آرت مفعم بالحيوية يستلهم من ثقافة الشارع وألوانها الصاخبة. يجسد الفنان مشاعر الفرح والتحرر من خلال تعدد الألوان الجريئة والأشكال التي تتحدى الحدود التقليدية.",
+    image: "https://picsum.photos/seed/marsam4/900/700",
+    thumb: "https://picsum.photos/seed/marsam4/500/380",
+    social: { instagram: "yousef_ziani", facebook: "yousef.ziani.popart", twitter: "yousef_ziani" }
+  },
+  {
+    id: "5",
+    title: "صمت الغابة",
+    artist: "نور الدين حمد",
+    year: 2023,
+    style: "واقعي",
+    mood: "هادئ",
+    price: "4,000",
+    description: "لوحة واقعية دقيقة تصور لحظة صمت عميق في قلب الغابة الكثيفة. تنبثق أشعة الضوء عبر الأشجار لتخلق لعبة بصرية آسرة من الظل والنور، مذكرةً المشاهد بجمال الطبيعة البكر.",
+    image: "https://picsum.photos/seed/marsam5/900/700",
+    thumb: "https://picsum.photos/seed/marsam5/500/380",
+    social: { instagram: "nourdin_hamd", facebook: "nourdin.hamd.realism", twitter: "nourdin_art" }
+  },
+  {
+    id: "6",
+    title: "ما وراء الأفق",
+    artist: "مايا الشريف",
+    year: 2024,
+    style: "مستقبلي",
+    mood: "ملهم",
+    price: "2,800",
+    description: "رؤية مستقبلية تتخيل ما يكمن خلف حدود الأفق المرئي. تمزج الفنانة بين التكنولوجيا والطبيعة في مشهد يوحي بعالم آخر يتجاوز حدود الخيال، مليء بالإمكانيات اللانهائية.",
+    image: "https://picsum.photos/seed/marsam6/900/700",
+    thumb: "https://picsum.photos/seed/marsam6/500/380",
+    social: { instagram: "maya_shareef", facebook: "maya.shareef.futurism", twitter: "maya_shareef" }
+  }
+];

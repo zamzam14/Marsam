@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>استكشاف — مرسم</title>
+</head>
+<body>
+
+  <nav class="nav-logo" style="border-bottom: 10px solid #c7b198;">
+    <img src="pic/logo-Marsam.png" alt="Logo">
+    <div class="links">
+      <a href="Homepage.html">الرئيسية</a>
+      <a href="explore.html" class="nav-active">الاستكشاف</a>
+      <a href="about.html">نبذة عنّا</a>
+    </div>
+  </nav>
+
+  <!-- ── رأس الصفحة ── -->
+  <header class="exp-header">
+    <span class="exp-eyebrow">اكتشف المعرض</span>
+    <h1 class="exp-title">استكشاف الأعمال</h1>
+    <p class="exp-subtitle">تصفح بحرية حسب الأسلوب الفني أو المزاج أو الفنان</p>
+  </header>
+
+  <!-- ── التبويبات ── -->
+  <div class="exp-tabs-wrap">
+    <div class="exp-tabs-bar">
+      <button class="exp-tab-btn active" data-tab="style">🎨 حسب الأسلوب</button>
+      <button class="exp-tab-btn" data-tab="mood">🌈 حسب المزاج</button>
+      <button class="exp-tab-btn" data-tab="artist">👤 حسب الفنان</button>
+    </div>
+  </div>
+
+  <!-- ── لوحة: الأسلوب ── -->
+  <div id="panel-style" class="exp-panel active">
+    <div class="exp-panels-wrap">
+      <div class="exp-filter-grid" id="style-cards"></div>
+    </div>
+  </div>
+
+  <!-- ── لوحة: المزاج ── -->
+  <div id="panel-mood" class="exp-panel">
+    <div class="exp-panels-wrap">
+      <div class="exp-filter-grid" id="mood-cards"></div>
+    </div>
+  </div>
+
+  <!-- ── لوحة: الفنان ── -->
+  <div id="panel-artist" class="exp-panel">
+    <div class="exp-panels-wrap">
+      <div class="exp-artist-grid" id="artist-cards"></div>
+    </div>
+  </div>
+
+  <!-- ── الأعمال المُصفَّاة ── -->
+  <div class="exp-results">
+    <div class="exp-results-header">
+      <h2 class="exp-results-title" id="exp-results-title">جميع الأعمال</h2>
+      <button class="exp-clear-btn" id="exp-clear" style="display:none">عرض الكل ×</button>
+    </div>
+    <div class="gallery-grid" id="exp-gallery-grid"></div>
+    <p class="exp-no-results" id="exp-no-results" style="display:none">لا توجد أعمال في هذه الفئة حاليًا</p>
+  </div>
+
+  <footer class="site-footer">
+    مرسم — المعرض الفني الرقمي &nbsp;·&nbsp; جميع الحقوق محفوظة ٢٠٢٦
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="explore.js"></script>
+</body>
+</html>
